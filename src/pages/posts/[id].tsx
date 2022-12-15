@@ -38,9 +38,7 @@ const Post: FC<PostProps> = ({ title, body, pathId }) => {
       <br />
       <div>
         <span>
-          <Link 
-          href={`/posts/${pathId - 1}`}>
-            {'< Back'}</Link>
+          <Link href={`/posts/${pathId - 1}`}>{'< Back'}</Link>
         </span>{' '}
         <span>
           <Link href={`/posts/${pathId + 1}`}>{'Next >'}</Link>

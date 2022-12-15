@@ -1,0 +1,250 @@
+/*================ Color Variables ================*/
+$color-teal: #4edbc9;
+$color-green: #29c95f;
+$color-dark-green: #1f8b38;
+$color-dark-purple: #171b4f;
+$color-blue: #536dc4;
+$banner-blue: #eef1fa;
+$color-blue-light: #f5f7fc;
+$color-accent: #10069e;
+$color-accent-light: #0083c3;
+$grey-dark: #514f4e;
+$grey-medium: #696a6a;
+$grey-medium-light: #6e757c;
+$grey-light: #909ba5;
+$grey-lighter: #d0d0d0;
+$grey-review: #99a4ae;
+$grey-nav: #9aa5af;
+$yellow-500: #ffdc30;
+
+//For filtering SVGs to color-blue
+$color-blue-filter: invert(45%) sepia(88%) saturate(393%) hue-rotate(189deg)
+  brightness(79%) contrast(93%);
+
+//Admin portal
+$color-dark-purple: #171b4f;
+$color-light-purple: #f2f2f2;
+$color-light-green: #bbe5b3;
+$color-light-grey: #dfe3e8;
+
+//Buttons
+$color-purple-primary: #536dc4;
+$color-purple-primary-opacity-06: rgba(83, 109, 196, 0.6);
+$color-purple-hover: #3b54ab;
+$color-purple-secondary: rgba(83, 109, 196, 0.1);
+$color-light-blue-hover: #dde3f5;
+$color-blue-secondary: #f5f7fc;
+$color-blue-secondary-hover: #dce2f5;
+
+// colorful palette for features slider
+$color-purple: #b85bbf;
+$color-pink: #ff85c8;
+$color-red: #ff5e3e;
+$color-orange: #ffa33e;
+$color-yellow: #fedb00;
+$color-green-300: #bbdc00;
+$color-green-500: #29cc5f;
+$color-turquoise: #4edcca;
+$color-navy-blue: #10069f;
+
+//Brights
+$color-bright-green: #8be076;
+$color-bright-chartruse: #e3ed55;
+$color-bright-orange: #ffac2a;
+$color-bright-salmon: #ff8c91;
+$color-bright-pink: #e44c9a;
+$color-bright-lavendar: #d79bd7;
+$color-bright-mint: #93e6b4;
+$color-bright-teal: #00abc2;
+
+// lights
+$color-light-pink: #fde0df;
+$color-light-blue: #cfdbe7;
+$color-light-orange: #fbefdb;
+$color-light-teal: #e9f5f2;
+$color-light-yellow: #f9f6b6;
+$color-light-green: #e5f6e3;
+
+// pastels
+$color-pastel-pink: #ffcfd8;
+$color-pastel-blue: #bdedef;
+$color-pastel-green: #e5f6e3;
+$color-pastel-orange: #ffd4c4;
+$color-pastel-grey: #f5f7fc;
+$color-pastel-yellow: #f9f6b6;
+
+// tints
+$color-tint-teal: #effaf9;
+$color-tint-purple: #f0eaf7;
+$color-tint-blue: #edf0f9;
+
+// Text colors
+$color-body-text: var(--color-body-text);
+$color-headline-text: $grey-dark;
+$color-highlight-primary: $color-yellow;
+$color-highlight-secondary: $color-teal;
+$color-headline-materials: $color-accent;
+$color-headline-playkits: $color-navy-blue;
+
+// Backgrounds
+$color-body: #fff;
+$color-beige: #fefbef;
+$color-beige-notification: #fefaed;
+$color-beige-video: #fefbef;
+$black-opacity: rgba(0, 0, 0, 0.53);
+$color-purple: #b75bbe;
+$color-pale-yellow: #fefaed;
+$color-pale-blue: #f5f7fc;
+
+$color-grey-background: #e8e4e2;
+$color-input-light-grey: #9aa5af;
+
+// Border colors
+$color-border: #f6f6f6;
+$color-input-border: $color-input-light-grey;
+$color-border-light-grey: #dcd7d2;
+
+// Helper colors for form error states
+$color-disabled: #f1f1f1;
+$color-disabled-border: $grey-dark;
+$color-error: $color-red;
+$color-success: #000;
+$color-success-bg: $color-success;
+$color-warning-red: #d52300;
+
+// Elements colors
+$color-form-accent: $color-teal;
+
+//Kit colors
+$color-kit-yellow: $color-yellow;
+$color-kit-red: $color-red;
+$color-kit-pink: $color-pink;
+$color-kit-teal: $color-teal;
+$color-kit-green: $color-green;
+$color-kit-navy: $color-navy-blue;
+$color-kit-orange: #ff9955;
+$color-kit-purple: #aa60bf;
+$color-kit-blue: #00afd0;
+$color-kit-lime: #bddc04;
+$color-kit-11: #3644ac;
+$color-kit-12: #fc85c7;
+$color-kit-13: #ffe808;
+$color-kit-14: #ef7c5e;
+$color-kit-15: #42d9cb;
+$color-kit-16: #24c87e;
+$color-kit-17: #ff9952;
+$color-kit-18: #ad5fbf;
+
+// utility colors
+$utility-red: #d52300;
+$utility-green: #19883e;
+$utility-blue: #006eee;
+
+//Babylist
+$babylist-primary: #6e3264;
+$babylist-primary-darker: #5c2a54;
+$babylist-grey-dark: #d3d3d3;
+$babylist-grey-light: #f1f1f1;
+
+/*================ Typography Variables ================*/
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-stack-regular: 'BrownPro-Regular', 'HelveticaNeue', 'Helvetica Neue',
+  Helvetica, Arial, sans-serif;
+$font-stack-bold: 'BrownPro-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica,
+  Arial, sans-serif;
+$font-stack-light: 'BrownPro-Light', 'HelveticaNeue', 'Helvetica Neue',
+  Helvetica, Arial, sans-serif;
+
+$font-stack-header: $font-stack-bold;
+$font-weight-header: $font-weight-bold;
+
+$font-stack-body: $font-stack-regular;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-mid: 21px;
+$font-size-big: 42px;
+$font-size-bigger: 48px;
+$font-size-links: 18px;
+
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+==============================================================================*/
+$tablet: 768px;
+
+$grid-medium: 750px;
+$grid-large: 990px;
+$grid-desktop: 1024px;
+$grid-widescreen: 1400px;
+$grid-gutter: 0px;
+
+$small: 'small';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large-tablet-down: 'large-tablet-down';
+$tablet-up: 'tablet-up';
+$tablet-down: 'tablet-down';
+$desktop-up: 'desktop-up';
+$desktop-up-ipad-pro: 'desktop-up-ipad-pro';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$widescreen: 'widescreen';
+
+// The `$breakpoints` list is used to build our media queries.
+// You can use these in the media-query mixin.
+$breakpoints: (
+  $small '(max-width: #{$grid-medium - 1})',
+  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+  $medium-down '(max-width: #{$grid-large - 1})',
+  $medium-up '(min-width: #{$grid-medium})',
+  $tablet-up '(min-width: #{$tablet + 1})',
+  $tablet-down '(max-width: #{$tablet})',
+  $large-tablet-down '(max-width: #{$grid-desktop})',
+  $desktop-up '(min-width: #{$grid-desktop})',
+  $desktop-up-ipad-pro '(min-width: #{$grid-desktop + 1})',
+  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
+  $large-down '(max-width: #{$grid-large - 1})',
+  $large-up '(min-width: #{$grid-large})',
+  $widescreen '(min-width: #{$grid-widescreen})'
+);
+
+/*============================================================================
+  Generate breakpoint-specific column widths and push classes
+    - Default column widths: $breakpoint-has-widths: ($small, $medium-up);
+    - Default is no push classes
+    - Will not work if `styles/global/grid.scss` is removed
+==============================================================================*/
+$breakpoint-has-widths: ($small, $medium-up);
+$breakpoint-has-push: ();
+
+/*================ Sizing Variables ================*/
+$width-site-tiny: 400px;
+$width-site-narrow: 700px;
+$width-site-normal: 900px;
+$width-site-normal-bigger: 1142px;
+$width-site-wide: 1368px;
+$width-site-wide-breakpoint: 1580px;
+$gutter: 30px;
+
+$margin-default: 1.5rem;
+$margin-double: 3rem;
+$margin-triple: 4.5rem;
+$margin-half: 0.75rem;
+
+// Padding at bottom of page between content and footer
+$padding-bottom-page: 219px;
+
+$navigation-h: 70px;
+
+/*================ Z-Index ================*/
+$z-index-dropdown: 2;
+$z-index-skip-to-content: 10000; // really high to be safe of app markup
+
+/*================ SVG ================*/
+$svg-select-icon: '../assets/svgs/ico-select.svg';
+$svg-select-icon-large: '../assets/svgs/ico-select-24px.svg';
+$svg-footer-select-icon: '../assets/svgs/footer-select-icon.svg';

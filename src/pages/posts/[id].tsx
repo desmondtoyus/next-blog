@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import {
   GetStaticPropsContext,
   GetStaticPathsResult,
-  GetStaticPropsResult,
 } from 'next';
 import Link from 'next/link';
 import { getPost, getPosts } from '@/helpers';

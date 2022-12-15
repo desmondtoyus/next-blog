@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import { GetStaticPropsContext } from 'next';
 import { getPosts } from '@/helpers';
 import { PostProps } from './posts/[id]';
 
@@ -9,7 +8,7 @@ export interface PageProps {
   posts: PostProps[];
 }
 
-export async function getStaticProps(pageProps: GetStaticPropsContext) {
+export async function getStaticProps() {
   const posts = await getPosts();
 
   return {
@@ -29,7 +28,7 @@ const Home: FC<PageProps> = ({ title, posts }) => {
           {posts.map(
             ({ id, title: postTitle }) =>
               id > 0 && (
-                <li>
+                <li key={id}>
                   <Link href={`/posts/${id}`}>{postTitle}</Link>
                 </li>
               )

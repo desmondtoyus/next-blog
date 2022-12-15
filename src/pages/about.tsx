@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
-import { GetStaticPropsContext } from 'next';
 
-export async function getStaticProps(pageProps: GetStaticPropsContext) {
-  // make async calls if necessary
+export async function getStaticProps() {
   return {
     props: {
       title: 'About Us',

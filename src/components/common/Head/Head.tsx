@@ -8,8 +8,7 @@ export interface HeadProps {
   description?: string;
 }
 const Head: FC<HeadProps> = ({ title = '', description = '' }) => {
-  const pageSeo =
-    title ? { ...config, title, description } : config;
+  const pageSeo = title ? { ...config, title, description } : config;
   return (
     <header>
       <DefaultSeo {...pageSeo} />

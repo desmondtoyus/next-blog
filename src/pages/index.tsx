@@ -31,7 +31,7 @@ const Home: FC<PageProps> = ({ title, posts }) => {
                 <li key={id}>
                   <Link href={`/posts/${id}`}>{postTitle}</Link>
                 </li>
-              )
+              ),
           )}
         </ul>
       </main>

@@ -8,10 +8,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   console.log('pageProps == ', pageProps);
   return (
     <>
-    <Head {...pageProps}/>
+      <Head {...pageProps} />
       <Navbar />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </>
   );
 }

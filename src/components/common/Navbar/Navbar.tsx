@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import style from './Navbar.module.scss';
 
-const Navbar: FC<{}> = ({}) => {
+const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <ul>

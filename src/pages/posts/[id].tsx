@@ -1,8 +1,5 @@
 import React, { FC } from 'react';
-import {
-  GetStaticPropsContext,
-  GetStaticPathsResult,
-} from 'next';
+import { GetStaticPropsContext, GetStaticPathsResult } from 'next';
 import Link from 'next/link';
 import { getPost, getPosts } from '@/helpers';
 
@@ -41,7 +38,8 @@ const Post: FC<PostProps> = ({ title, body, pathId }) => {
       <br />
       <div>
         <span>
-          <Link href={`/posts/${pathId - 1}`}>{'< Back'}</Link>
+          <Link href={`/posts/${pathId - 1}`}>
+            {'< Back'}</Link>
         </span>{' '}
         <span>
           <Link href={`/posts/${pathId + 1}`}>{'Next >'}</Link>

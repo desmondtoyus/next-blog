@@ -13,3 +13,9 @@ export async function getPost(id: number) {
   }
 
 }
+
+export async function getPosts() {
+  const data = await readFile(`src/content/posts.json`, 'utf8');
+  return JSON.parse(data);
+  
+}

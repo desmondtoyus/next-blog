@@ -1,12 +1,28 @@
 import React, { FC } from 'react';
-import { GetStaticPropsContext, GetStaticPathsResult } from 'next';
+import {
+  GetStaticPropsContext,
+  GetStaticPathsResult,
+  GetStaticPropsResult,
+} from 'next';
 import Link from 'next/link';
-import { getPost } from '@/helpers';
+import { getPost, getPosts } from '@/helpers';
 
-export function getStaticPaths(): GetStaticPathsResult {
+export interface PostProps {
+  id: number;
+  title: string;
+  body: string;
+  pathId: number;
+}
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+  const posts = await getPosts();
+
   return {
-    paths: [],
-    fallback: 'blocking',
+    paths: posts.map(({ id }: { id: number }) => ({
+      params: { id: String(id) },
+    })),
+    // paths: [],
+    fallback: true,
   };
 }
 
@@ -18,29 +34,22 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
   };
 }
 
-const FirstPost: FC<{ title: string; body: string, pathId: number }> = ({ title, body, pathId }) => {
+const Post: FC<PostProps> = ({ title, body, pathId }) => {
   return (
-    <div>
-      <h1> {title} </h1>
+    <>
+      <h1>{title}</h1>
       <p>{body}</p>
       <br />
       <div>
         <span>
-          <Link href={`/posts/${pathId - 1}`}>
-            {'< Back'}
-          </Link>
-
-        </span>
-        {' '}
+          <Link href={`/posts/${pathId - 1}`}>{'< Back'}</Link>
+        </span>{' '}
         <span>
-          <Link href={`/posts/${pathId + 1}`}>
-            {'Next >'}
-          </Link>
-
+          <Link href={`/posts/${pathId + 1}`}>{'Next >'}</Link>
         </span>
       </div>
-    </div>
+    </>
   );
 };
 
-export default React.memo(FirstPost);
+export default React.memo(Post);

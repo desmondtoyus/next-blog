@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import style from './Navbar.module.scss';
+import { ThemeSwitch } from '../ThemeSwith';
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
         </li>
         <Link href="/about"> About</Link>
       </ul>
+      <ThemeSwitch />
     </nav>
   );
 };
